@@ -6,6 +6,7 @@
 		{$\underset{\text{\scriptsize #1}}{\underline{\hspace{#2}}}$}
 	\newcommand{\undernoteFull}[1]
 		{$\underset{\text{\scriptsize #1}}{\hrulefill}$}
+	\newcommand{\longunder}[1]{\underline{\hspace{#1}}}
 
 	{\fontsize{10pt}{0}\bfseries\centering{
 		\MakeUppercase{Министерство науки и высшего образования \\
@@ -22,8 +23,7 @@
 
 		\MakeUppercase{Факультет информационных технологий}
 
-	}}\leavevmode
-	\newline
+	}}
 
 	\noindent
 	Кафедра \hrulefill
@@ -73,7 +73,25 @@
 	\noindent
 	\textbf{Руководитель практики}\\
 	\setstretch{0.3}
-	\noindent\textbf{от профильной организации:}
-\end{titlepage}
+	\noindent
+	\textbf{от профильной организации} \quad\quad\undernote{(ФИО полностью,
+		должность)}{7cm}\qquad\undernote{(подпись)}{2cm}
 
+	\setstretch{1.5}
+	\noindent
+	\textbf{Руководитель практики от НГУ}\; \undernote{(ФИО полностью,
+		должность)}{7cm}\qquad\undernote{(подпись)}{2cm}
+
+	\setstretch{1}
+	\noindent
+	\textbf{Отчет заслушан на заседании кафедры}
+		\undernoteFull{\qquad\qquad\qquad\qquad\qquad(наименование
+		кафедры)\qquad\qquad\qquad\qquad\qquad}
+
+	\noindent
+	\textbf{протокол \longunder{1.5cm} от \quad «\longunder{0.5cm}»\quad
+		\longunder{4cm}\quad 20\longunder{0.5cm} г.} \leavevmode\\
+
+	{\centering Новосибирск 20\longunder{0.5cm} г. \\}
+\end{titlepage}
 \end{document}
