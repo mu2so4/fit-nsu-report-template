@@ -2,6 +2,11 @@
 
 \begin{document}
 \begin{titlepage}
+	\newcommand{\undernote}[2]
+		{$\underset{\text{\scriptsize #1}}{\underline{\hspace{#2}}}$}
+	\newcommand{\undernoteFull}[1]
+		{$\underset{\text{\scriptsize #1}}{\hrulefill}$}
+
 	{\fontsize{10pt}{0}\bfseries\centering{
 		\MakeUppercase{Министерство науки и высшего образования \\
 		Российской Федерации}
@@ -37,14 +42,13 @@
 
 		\noindent
 		\textbf{о прохождении \underline{\hspace{12cm}}}\\
-		$\underset{\text{(указывается наименование практики)}}
-		{\underline{\hspace{8cm}}}$\\
+		\undernote{(указывается наименование практики)}{8cm}\\
 	}\leavevmode
 
 	\noindent
-	\textbf{Обучающегося} $\underset{\text{\scriptsize(ФИО полностью)}}
-	{\underline{\hspace{7.8cm}}}$ \textbf{группы №}\underline{\hspace{2cm}}
-	\textbf{курса}\underline{\hspace{0.4cm}}
+	\textbf{Обучающегося} \undernote{(ФИО полностью)}{7.8cm}
+	\textbf{группы №}\underline{\hspace{2cm}}\textbf{курса}\underline
+	{\hspace{0.4cm}}
 
 	\noindent
 	\textbf{Тема задания:} \hrulefill
@@ -56,18 +60,20 @@
 	\hrulefill
 
 	\noindent
-	Место прохождения практики: $\underset
-	{\text{\scriptsize\qquad(полное наименование организации и структурного
-	подразделения, индекс, адрес)\qquad}}{\hrulefill}$
+	\textbf{Место прохождения практики:} \undernoteFull{\quad(полное
+	наименование организации и структурного подразделения, индекс, адрес)
+	\quad}
 
 	\noindent
 	\hrulefill
 
+	\noindent
 	\textbf{Сроки прохождения практики:} \underline{\hspace{5cm}}
 
+	\noindent
 	\textbf{Руководитель практики}\\
 	\setstretch{0.3}
-	\textbf{от профильной организации:}
+	\noindent\textbf{от профильной организации:}
 \end{titlepage}
 
 \end{document}
