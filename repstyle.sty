@@ -19,6 +19,7 @@
 
 \linespread{1}
 \setlength\parindent{12.5mm}
+\setlength\parskip{0\baselineskip plus 0mm minus 0mm}
 
 \newcommand{\unnumberedsection}[1]{\addcontentsline{toc}{section}{#1} \section*{#1}}
 \newcommand{\sectionfont}{\fontfamily{kurier}}
@@ -46,7 +47,7 @@
 }
 
 \titleformat{\section}
-	{\sectionfont\Large\bfseries}{Глава \thesection.}{1em}{}
+	{\sectionfont\Large\bfseries\centering\MakeUppercase}{\thesection.}{1em}{}
 
 \titleformat{\subsection}
 	{\sectionfont\large\bfseries}{\thesubsection.}{1em}{}
