@@ -14,6 +14,7 @@
 \RequirePackage{parskip}
 \RequirePackage{tempora}
 \RequirePackage{setspace}
+\RequirePackage{tocloft}
 
 \definecolor{linkc}{rgb}{0.33, 0.51, 0.78}
 
@@ -33,11 +34,12 @@
 	linkbordercolor=red,
 }
 
-\titleformat{\section}
-	{\Large\centering\bfseries\MakeUppercase}{\thesection}
+\titleformat{\chapter}
+	{\Large\centering\bfseries\MakeUppercase}{\thechapter}
 	{1em}{}
 
-\titleformat{\subsection}
-	{\large\centering\bfseries\MakeUppercase}{\thesubsection}
+\titleformat{\sectpon}
+	{\large\centering\bfseries\MakeUppercase}{\thesection}
 	{1em}{}
 
+\renewcommand\cftchapdotsep{\cftdotsep}
