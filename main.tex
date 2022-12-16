@@ -9,6 +9,7 @@
 \usepackage{relsize}
 \usepackage{tikz}
 \usepackage{pgfplots}
+\usepackage{cite}
 \usepackage{cmap}
 
 \pgfplotsset{compat=1.17}
@@ -27,4 +28,11 @@
 
 \subfile{sections/yet_another}
 
+
+\newpage
+\renewcommand{\bibname}{Список использованной литературы}
+\nocite{*}
+\bibliography{references}
+\bibliographystyle{plain}
+\addcontentsline{toc}{chapter}{Список использованной литературы}
 \end{document}

@@ -1,5 +1,17 @@
-*.toc
+## Common LaTeX files
 *.out
 *.aux
-*.pdf
 *.log
+
+## Table of contents file
+*.toc
+
+## Bib files
+*.bbl
+*.blg
+
+## Output file
+*.pdf
+
+## Merge conflicts files
+*.orig
