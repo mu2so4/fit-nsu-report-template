@@ -7,23 +7,19 @@
 	\newcommand{\undernoteFull}[1]
 		{$\underset{\text{\scriptsize #1}}{\hrulefill}$}
 	\newcommand{\longunder}[1]{\underline{\hspace{#1}}}
+	\newcommand{\headerHead}[1]{ {\fontsize{10pt}{0}\bfseries\centering
+		\MakeUppercase{#1} } }
 
-	{\fontsize{10pt}{0}\bfseries\centering{
-		\MakeUppercase{Министерство науки и высшего образования \\
-		Российской Федерации}
+	
+	\headerHead{Министерство науки и высшего образования \\
+		Российской Федерации \\} \leavevmode
 
-		\leavevmode\newline
+	\headerHead{Федеральное Государственное Автономное \\
+		образовательное учреждение высшего образования \\
+		новосибирский национальный исследовательский
+		государственный университет \\} \leavevmode
 
-		\MakeUppercase{Федеральное Государственное Автономное \\
-			образовательное учреждение высшего образования \\
-			новосибирский национальный исследовательский
-			государственный университет}
-
-		\leavevmode\newline
-
-		\MakeUppercase{Факультет информационных технологий}
-
-	}}
+	\headerHead{Факультет информационных технологий \\} \leavevmode
 
 	\noindent
 	Кафедра \hrulefill
@@ -46,7 +42,7 @@
 	}\leavevmode
 
 	\noindent
-	\textbf{Обучающегося} \undernote{(ФИО полностью)}{7cm}
+	\textbf{Обучающегося} \undernote{(ФИО полностью)}{6.5cm}
 	\textbf{группы №}\underline{\hspace{2cm}} \textbf{курса} \underline
 	{\hspace{1cm}}
 
@@ -60,39 +56,45 @@
 	\hrulefill
 
 	\noindent
-	\textbf{Место прохождения практики:} \undernoteFull{\quad(полное
-	наименование организации и структурного подразделения, индекс, адрес)
-	\quad}
+	\textbf{Место прохождения практики:} \undernoteFull{(полное
+	наименование организации и структурного подразделения, индекс, адрес)}
 
 	\noindent
 	\hrulefill
 
 	\noindent
-	\textbf{Сроки прохождения практики:} \underline{\hspace{5cm}}
+	\textbf{Сроки прохождения практики:} \underline{\hspace{5cm}}\\
 
 	\noindent
-	\textbf{Руководитель практики}\\
+	\textbf{Руководитель практики}
+
 	\setstretch{0.3}
 	\noindent
 	\textbf{от профильной организации} \quad\quad\undernote{(ФИО полностью,
-	должность)}{7cm}\qquad\undernote{(подпись)}{2cm}
+	должность)}{6cm}\qquad\undernote{(подпись)}{2cm}
 
 	\noindent
-	\textbf{Руководитель практики от НГУ}\; \undernote{(ФИО полностью,
-	должность)}{7cm}\qquad\undernote{(подпись)}{2cm}
+	\textbf{Руководитель практики от НГУ}\;\; \undernote{(ФИО полностью,
+	должность)}{6cm}\qquad\undernote{(подпись)}{2cm}
 
 	\noindent
 	\textbf{Руководитель ВКР}\qquad\qquad\qquad\; \undernote{
-	(ФИО полностью, должность)}{7cm}\qquad\undernote{(должность)}{2cm}
+	(ФИО полностью, должность)}{6cm}\qquad\undernote{(должность)}{2cm}
+
+	\noindent
+	\textbf{Оценка по итогам защиты отчета:} \undernote{
+	(неудовлетворительно, удовлетворительно, хорошо, отлично)}{9cm}
 
 	\noindent
 	\textbf{Отчет заслушан на заседании кафедры}\;
-	\undernoteFull{\qquad\qquad\qquad\qquad\qquad(наименование кафедры)
-	\qquad\qquad\qquad\qquad\qquad}
+	\undernoteFull{\qquad\qquad\qquad\qquad(наименование кафедры)
+	\qquad\qquad\qquad\qquad}
 
 	\noindent
 	\textbf{протокол\quad\longunder{1.5cm}\quad от \quad «\longunder{0.5cm}»
-	\quad\longunder{4cm}\quad 20\longunder{0.5cm} г.} \leavevmode\\
+	\quad\longunder{4cm}\quad 20\longunder{0.5cm} г.} \leavevmode
+
+	\vspace{3cm}
 
 	{\centering Новосибирск 20\longunder{0.5cm} г. \\}
 \end{titlepage}
